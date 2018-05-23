@@ -1,7 +1,6 @@
 package application.models;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -11,11 +10,9 @@ public class Job {
 
     @Id
     private String id;
-
     private String title;
-
-    @DBRef
-    private List<Column> columns;
+    private List<String> columns;
+    private List<String> applicantIds;
 
     public Job() {}
 
@@ -27,7 +24,11 @@ public class Job {
         return title;
     }
 
-    public List<Column> getColumnIds() {
+    public List<String> getColumns() {
         return columns;
+    }
+
+    public List<String> getApplicantIds() {
+        return applicantIds;
     }
 }
