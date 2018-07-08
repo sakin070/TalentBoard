@@ -3,13 +3,15 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs';
 import * as firebase from 'firebase/app';
 
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database'
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AfService {
   user: Observable<firebase.User>;
-  constructor(public afAuth : AngularFireAuth) {
+  constructor(public afAuth : AngularFireAuth,private firebase:AngularFireDatabase) {
     this.user = afAuth.authState;
   }
 

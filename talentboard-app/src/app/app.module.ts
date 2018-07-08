@@ -15,6 +15,10 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AfService } from './providers/af.service';
 
+import { ToastrModule } from 'ngx-toastr';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { FormsModule} from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +35,10 @@ import { AfService } from './providers/af.service';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireDatabaseModule,
+    FormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [AfService],
   bootstrap: [AppComponent]

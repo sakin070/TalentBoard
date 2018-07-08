@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCMophzPwRcBbbAqTFcaH9-zyVTXAeul40",
-    authDomain: "talentboard-88518.firebaseapp.com",
-    databaseURL: "https://talentboard-88518.firebaseio.com",
-    projectId: "talentboard-88518",
-    storageBucket: "talentboard-88518.appspot.com",
-    messagingSenderId: "540164168000"
+    apiKey: "AIzaSyD5THilToLyYIbTDBQxUOax_xXvA3N5SdE",
+    authDomain: "talentboard-7440f.firebaseapp.com",
+    databaseURL: "https://talentboard-7440f.firebaseio.com",
+    projectId: "talentboard-7440f",
+    storageBucket: "talentboard-7440f.appspot.com",
+    messagingSenderId: "295008903311"
   }
 };
 
