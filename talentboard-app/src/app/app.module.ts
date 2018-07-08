@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DndModule } from 'ng2-dnd';
 
 import { AppComponent } from './app.component';
 import { ApplicantComponent } from './applicant/applicant.component';
@@ -12,7 +13,8 @@ import { ColumnComponent } from './column/column.component';
     ColumnComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    DndModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
