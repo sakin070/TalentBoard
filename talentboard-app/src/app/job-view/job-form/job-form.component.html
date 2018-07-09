@@ -1,0 +1,55 @@
+<form #jobForm="ngForm" (ngSubmit)="onSubmit(jobForm)">
+  <input type="hidden" name="id" #id="ngModel" [(ngModel)]="afService.selectedJob.id">
+  <div class="form-group">
+    <label>Title</label>
+    <input class="form-control" name="title" #title="ngModel" [(ngModel)]="afService.selectedJob.title" placeholder="Title" required>
+  </div>
+  <div class="form-group">
+    <label>Description</label>
+    <input class="form-control" name="description" #description="ngModel" [(ngModel)]="afService.selectedJob.description" placeholder="Description">
+  </div>
+  <div class="form-group">
+    <label>Location</label>
+    <input class="form-control" name="location" #location="ngModel" [(ngModel)]="afService.selectedJob.location" placeholder="Location">
+  </div>
+  <div class="form-group">
+    <label>Salary</label>
+    <div class="input-group">
+      <div class="input-group-addon">
+        <i class="fa fa-dollar"></i>
+      </div>
+      <input class="form-control" name="salary" #salary="ngModel" [(ngModel)]="afService.selectedJob.salary" placeholder="Salary">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Applicant Ids</label>
+    <input class="form-control" name="applicantIds" #applicantIds="ngModel" [(ngModel)]="afService.selectedJob.applicantIds" placeholder="Applicant Ids">
+  </div>
+
+
+  <div class="form-group">
+    <label>Open</label>
+    <div class="input-group">
+      <div class="ui dropdown" suiDropdown>
+        <div class="text"></div>
+        <i class="dropdown icon"></i>
+        <div class="menu" suiDropdownMenu>
+          <div class="item">True</div>
+          <div class="item">False</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-default" type="submit"  (click)="onSubmit(jobform)">
+      <i class="fa fa-floppy-o"></i>
+      Submit</button>
+    <button class="btn btn-default" type="button" (click)="resetForm(jobform)">
+      <i class="fa fa-repeat"></i>
+      Reset</button>
+  </div>
+
+
+</form>

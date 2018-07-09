@@ -18,6 +18,7 @@ import { AfService } from './providers/af.service';
 import { ToastrModule } from 'ngx-toastr';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FormsModule} from '@angular/forms';
+import { JobFormComponent } from './job-view/job-form/job-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FormsModule} from '@angular/forms';
     CreateJobFormComponent,
     SideNavComponent,
     LoginPageComponent,
-    NavBarComponent
+    NavBarComponent,
+    JobFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-job-view',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JobViewComponent implements OnInit {
 
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
+  }
+
+  newJob() {
+    this.router.navigate(['./addjob']);
   }
 
 }
