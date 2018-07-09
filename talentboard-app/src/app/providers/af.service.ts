@@ -27,6 +27,7 @@ export class AfService {
     this.user = afAuth.authState;
     this.userList = this.firebase.list("User");
     this.jobList = this.firebase.list("Job");
+    this.applicantList = this.firebase.list("Applicant");
   }
 
   loginWithGoogle() {
@@ -97,7 +98,7 @@ export class AfService {
       location: job.location,
       salary: job.salary,
       applicantIds: job.applicantIds,
-      // isOpen: job.isOpen,
+      isOpen: job.isOpen,
     });
   }
 

@@ -6,5 +6,5 @@ export class Job {
   public salary: string;
   // public applicantIds: Array<string>;
   public applicantIds: string;
-  // public isOpen: boolean;
+  public isOpen: string;
 }

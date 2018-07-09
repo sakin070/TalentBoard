@@ -36,7 +36,7 @@ export class JobFormComponent implements OnInit {
       description: '',
       salary: '',
       applicantIds:"",
-      // isOpen:true
+      isOpen:""
       }
 
   }

@@ -5,6 +5,8 @@ export class Applicant {
   public phoneNumber: string;
   public status: string;
   public resumeURL: string;
-  public favouritedUserIds: Array<string>;
+  // public favouritedUserIds: Array<string>;
+  public favouritedUserIds: string;
   public assignedUserId: string;
+
 }
