@@ -1,0 +1,17 @@
+html, body, #container {
+  height: 80%;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#loginForm {
+  padding: 2em;
+}
+
+#logo {
+  margin-bottom: 2em;
+}
